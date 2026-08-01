@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience | Sudeep Reddy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="background-orb orb-a"></div>
+    <div class="background-orb orb-b"></div>
+    <div class="background-grid"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Sudeep Reddy home">
+        <span class="brand-mark">SR</span>
+        <span><strong>Sudeep Reddy</strong><small>SRE · DevOps · Cloud</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero section-shell" data-reveal>
+        <p class="eyebrow">Experience</p>
+        <h1 class="page-title">Hands-on reliability work in high-stakes production environments.</h1>
+      </section>
+
+      <section class="section-shell timeline-card" data-reveal>
+        <div class="timeline-meta">
+          <h3>Site Reliability Engineer - Ops</h3>
+          <p>PhonePe Pvt. Ltd.</p>
+          <p>Dec 2025 - Present · Bengaluru, India</p>
+        </div>
+        <ul class="bullet-list">
+          <li>Primary on-call responder for mission-critical payment platforms serving 700+ million users.</li>
+          <li>Built and operated a multi-region active-active MySQL cluster across Azure and two on-prem data centers for high availability and disaster recovery.</li>
+          <li>Monitored YARN ResourceManager and Kubernetes cluster health, optimizing allocation, resolving pending pods, and terminating rogue processes.</li>
+          <li>Automated platform health checks, recovery workflows, and incident response with Python and Bash, reducing manual operational effort by 60%.</li>
+          <li>Built Grafana dashboards on top of Prometheus monitoring to improve SLA/SLO tracking and reduce MTTR by 60% across big data services.</li>
+          <li>Managed Control-M batch scheduling and CRON jobs, proactively resolving dependency failures and SLA breaches.</li>
+          <li>Deployed a ServiceNow-integrated L1 support chatbot backed by OpenAI models and historical ServiceNow, Confluence, Jira, and SOP data.</li>
+          <li>Troubleshot Kerberos authentication, LDAP integration, and IAM policies across the Hadoop ecosystem.</li>
+        </ul>
+      </section>
+
+      <section class="section-shell section-panel" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Tooling across cloud, automation, reliability, and data systems.</h2>
+        </div>
+        <div class="skills-grid compact-grid">
+          <article class="skill-card">
+            <h3>Cloud & Infra</h3>
+            <ul>
+              <li>AWS EC2</li><li>S3</li><li>Route 53</li><li>IAM</li><li>CloudWatch</li><li>Azure</li><li>VPC</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Containers & Orchestration</h3>
+            <ul>
+              <li>Kubernetes</li><li>Docker</li><li>Helm</li><li>Container orchestrators</li><li>Nginx</li><li>firewalls</li><li>NAT</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Observability & Automation</h3>
+            <ul>
+              <li>Prometheus</li><li>Grafana</li><li>ELK Stack</li><li>Python</li><li>Bash</li><li>Shell scripting</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Data & Platform</h3>
+            <ul>
+              <li>MySQL</li><li>Percona</li><li>Galera</li><li>Cosmos DB</li><li>AeroSpike</li><li>Hadoop</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>AI & ML</h3>
+            <ul>
+              <li>TensorFlow</li><li>LLMs</li><li>OpenAI models</li><li>Gemma 4</li><li>Transformers</li><li>Anomaly detection</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Delivery & Operations</h3>
+            <ul>
+              <li>Jira</li><li>Confluence</li><li>ServiceNow</li><li>Control-M</li><li>CRON</li><li>CI/CD</li><li>Kerberos</li><li>LDAP</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell section-panel" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Education & Certifications</p>
+          <h2>Formal training plus current cloud certification.</h2>
+        </div>
+        <div class="education-grid compact-grid">
+          <article class="education-card">
+            <h3>MBA in Data Science</h3>
+            <p>Amity University</p>
+            <p>2025 · 8.4/10 CGPA</p>
+          </article>
+          <article class="education-card">
+            <h3>B.E. in Electronics and Communication</h3>
+            <p>CMR Institute of Technology, Bengaluru</p>
+            <p>2022</p>
+          </article>
+          <article class="education-card">
+            <h3>OCI 2025 DevOps Professional</h3>
+            <p>Oracle Corporation</p>
+            <p>Oracle Cloud Infrastructure (OCI)</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built for Sudeep Reddy.</p>
+      <p>Experience page.</p>
+    </footer>
+  </body>
+</html>
