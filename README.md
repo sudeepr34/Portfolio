@@ -10,6 +10,8 @@ Multi-page portfolio website for Sudeep Reddy, built from the resume PDF in this
 - Experience, skills, and certifications page
 - Contact page
 - Resume PDF download link
+- Vercel security headers in `vercel.json`
+- Basic secret hygiene in `.gitignore`
 
 ## How to use
 
@@ -28,3 +30,4 @@ If you want to use your GoDaddy domain, the simplest path is:
 
 - The projects page already uses your specific GitHub repositories.
 - Update contact details if you want a different public email or phone number.
+- Public resume contact details are intentionally visible. Do not commit private keys, API tokens, `.env` files, or cloud credentials.

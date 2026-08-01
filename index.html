@@ -11,15 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="main.js"></script>
   </head>
   <body>
-    <div class="background-orb orb-a"></div>
-    <div class="background-orb orb-b"></div>
+    <div class="mesh-sky"></div>
     <div class="background-grid"></div>
 
     <header class="site-header">
@@ -76,6 +75,15 @@
         </div>
 
         <aside class="hero-card" data-reveal>
+          <div class="ops-scene" aria-hidden="true">
+            <div class="scene-rail"></div>
+            <div class="node node-core">SRE</div>
+            <div class="node node-a">K8s</div>
+            <div class="node node-b">DB</div>
+            <div class="node node-c">AI</div>
+            <div class="node node-d">SLO</div>
+          </div>
+
           <div class="profile-card">
             <p class="profile-label">Current role</p>
             <h2>Site Reliability Engineer - Ops</h2>
@@ -128,6 +136,31 @@
           <h2 class="page-title">Your resume is included and downloadable from the site.</h2>
         </div>
         <a class="button button-primary" href="Sudeep Reddy SRE Resume.pdf" download>Download PDF</a>
+      </section>
+
+      <section class="section-shell section-panel" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Depth</p>
+          <h2>Built around production reliability, data platforms, and AI-assisted operations.</h2>
+        </div>
+        <div class="metric-grid">
+          <article class="metric-card">
+            <strong>450 PB</strong>
+            <span>Visa Hadoop ecosystem supported at Altimetrik.</span>
+          </article>
+          <article class="metric-card">
+            <strong>70%</strong>
+            <span>Faster provisioning with Terraform and Ansible.</span>
+          </article>
+          <article class="metric-card">
+            <strong>35%</strong>
+            <span>Lower p99 latency through SQL and NGINX tuning.</span>
+          </article>
+          <article class="metric-card">
+            <strong>96%</strong>
+            <span>Workflow success rate after Airflow optimization.</span>
+          </article>
+        </div>
       </section>
     </main>
 

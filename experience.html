@@ -7,15 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="main.js"></script>
   </head>
   <body>
-    <div class="background-orb orb-a"></div>
-    <div class="background-orb orb-b"></div>
+    <div class="mesh-sky"></div>
     <div class="background-grid"></div>
 
     <header class="site-header">
@@ -48,9 +47,29 @@
         <ul class="bullet-list">
           <li>Primary on-call responder for mission-critical payment platforms serving 700+ million users.</li>
           <li>Built and operated a multi-region active-active MySQL cluster across Azure and two on-prem data centers for high availability and disaster recovery.</li>
+          <li>Engineered NGINX load-balancing strategies and optimized SQL performance through query profiling and execution plan analysis, reducing p99 latency by 35%.</li>
+          <li>Centralized database replication monitoring with ELK, Grafana, and Prometheus, reducing root-cause analysis time by 70%.</li>
           <li>Monitored YARN ResourceManager and Kubernetes cluster health, optimizing allocation, resolving pending pods, and terminating rogue processes.</li>
+          <li>Built and maintained Docker and Podman containers with GitLab CI/CD and Harbor for repeatable image builds and production release consistency.</li>
           <li>Automated platform health checks, recovery workflows, and incident response with Python and Bash, reducing manual operational effort by 60%.</li>
           <li>Built Grafana dashboards on top of Prometheus monitoring to improve SLA/SLO tracking and reduce MTTR by 60% across big data services.</li>
+          <li>Defined and tracked SLOs and error budgets across owned services, using PagerDuty for alerting and escalation.</li>
+          <li>Conducted manual chaos and failure-injection testing on staging infrastructure before production rollout.</li>
+        </ul>
+      </section>
+
+      <section class="section-shell timeline-card" data-reveal>
+        <div class="timeline-meta">
+          <h3>Product and Platform Engineer (SRE)</h3>
+          <p>Altimetrik Pvt. Ltd. · Client: Visa</p>
+          <p>Sept 2023 - Dec 2025 · Bengaluru, India (Remote)</p>
+        </div>
+        <ul class="bullet-list">
+          <li>Supported 24x7 production operations for Visa's 450 PB Hadoop ecosystem, including HDFS, Hive, and Presto.</li>
+          <li>Automated AWS infrastructure provisioning and configuration management using Terraform and Ansible, reducing provisioning time by 70%.</li>
+          <li>Optimized Apache Airflow DAG scheduling and dependency management, improving workflow success rates from 88% to 96% across 500+ daily production pipelines.</li>
+          <li>Monitored YARN ResourceManager queue-level allocation for Spark jobs and managed Kubernetes cluster health.</li>
+          <li>Automated platform health checks, recovery workflows, and incident response using Python and Bash, reducing manual operational effort by 60%.</li>
           <li>Managed Control-M batch scheduling and CRON jobs, proactively resolving dependency failures and SLA breaches.</li>
           <li>Deployed a ServiceNow-integrated L1 support chatbot backed by OpenAI models and historical ServiceNow, Confluence, Jira, and SOP data.</li>
           <li>Troubleshot Kerberos authentication, LDAP integration, and IAM policies across the Hadoop ecosystem.</li>
@@ -72,19 +91,19 @@
           <article class="skill-card">
             <h3>Containers & Orchestration</h3>
             <ul>
-              <li>Kubernetes</li><li>Docker</li><li>Helm</li><li>Container orchestrators</li><li>Nginx</li><li>firewalls</li><li>NAT</li>
+              <li>Kubernetes</li><li>Docker</li><li>Podman</li><li>Helm</li><li>Drove</li><li>Nginx</li><li>firewalls</li><li>NAT</li>
             </ul>
           </article>
           <article class="skill-card">
             <h3>Observability & Automation</h3>
             <ul>
-              <li>Prometheus</li><li>Grafana</li><li>ELK Stack</li><li>Python</li><li>Bash</li><li>Shell scripting</li>
+              <li>Prometheus</li><li>Grafana</li><li>ELK Stack</li><li>Splunk</li><li>OpenSearch</li><li>Python</li><li>Bash</li>
             </ul>
           </article>
           <article class="skill-card">
             <h3>Data & Platform</h3>
             <ul>
-              <li>MySQL</li><li>Percona</li><li>Galera</li><li>Cosmos DB</li><li>AeroSpike</li><li>Hadoop</li>
+              <li>MySQL</li><li>Percona</li><li>Galera</li><li>Cosmos DB</li><li>Aerospike</li><li>Hadoop</li><li>Hive</li><li>Presto</li>
             </ul>
           </article>
           <article class="skill-card">
@@ -96,7 +115,7 @@
           <article class="skill-card">
             <h3>Delivery & Operations</h3>
             <ul>
-              <li>Jira</li><li>Confluence</li><li>ServiceNow</li><li>Control-M</li><li>CRON</li><li>CI/CD</li><li>Kerberos</li><li>LDAP</li>
+              <li>Jira</li><li>Confluence</li><li>ServiceNow</li><li>Control-M</li><li>CRON</li><li>GitLab CI/CD</li><li>Jenkins</li><li>PagerDuty</li>
             </ul>
           </article>
         </div>
