@@ -14,6 +14,12 @@
     <script defer src="main.js"></script>
   </head>
   <body>
+    <div class="ambient-aurora" aria-hidden="true">
+      <span class="orb orb-a"></span>
+      <span class="orb orb-b"></span>
+      <span class="glow-ring ring-a"></span>
+      <span class="glow-ring ring-b"></span>
+    </div>
     <div class="mesh-sky"></div>
     <div class="background-grid"></div>
 
@@ -36,25 +42,16 @@
       <section class="page-hero section-shell" data-reveal>
         <p class="eyebrow">Projects</p>
         <h1 class="page-title">AI and observability projects built around faster incident understanding.</h1>
-        <p class="page-lede">
-          These are the projects from your resume, now linked to the actual GitHub repositories you
-          sent over.
-        </p>
+        <p class="page-lede">These are the projects reflected in the resume, now presented as practical, high-impact engineering work that balances reliability, automation, and insight.</p>
       </section>
 
       <section class="section-shell project-stack" data-reveal>
-        <article class="project-card">
+        <article class="project-card tilt-card">
           <div class="project-top">
             <h3>LLM-Powered Incident RCA Pipeline</h3>
-            <a class="text-link" href="https://github.com/sudeepr34/LLM-Powered-Incident-RCA-Pipeline" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
+            <a class="text-link" href="https://github.com/sudeepr34/LLM-Powered-Incident-RCA-Pipeline" target="_blank" rel="noreferrer">GitHub</a>
           </div>
-          <p>
-            Designed and deployed an incident RCA pipeline that combines Prometheus and ELK log data
-            with an LLM summarization layer to correlate alerts and draft runbook recommendations for
-            on-call engineers.
-          </p>
+          <p>Designed and deployed an incident RCA pipeline that combines Prometheus and ELK log data with an LLM summarization layer to correlate alerts and draft runbook recommendations for on-call engineers.</p>
           <p><strong>Impact:</strong> Contributed to a 35% MTTR reduction during production outages.</p>
           <div class="chip-row">
             <span class="chip">Prometheus</span>
@@ -64,17 +61,12 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card tilt-card">
           <div class="project-top">
             <h3>Transformer-Based Anomaly Detection System</h3>
-            <a class="text-link" href="https://github.com/sudeepr34/Transformer-Based-Anomaly-Detection-System" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
+            <a class="text-link" href="https://github.com/sudeepr34/Transformer-Based-Anomaly-Detection-System" target="_blank" rel="noreferrer">GitHub</a>
           </div>
-          <p>
-            Engineered a TensorFlow Transformer pipeline over Prometheus time-series telemetry to
-            detect latency spikes and infrastructure saturation before customer impact.
-          </p>
+          <p>Engineered a TensorFlow Transformer pipeline over Prometheus time-series telemetry to detect latency spikes and infrastructure saturation before customer impact.</p>
           <p><strong>Impact:</strong> Tuned for 94% precision with iterative threshold calibration.</p>
           <div class="chip-row">
             <span class="chip">TensorFlow</span>
@@ -84,16 +76,12 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card tilt-card">
           <div class="project-top">
             <h3>On-Prem Incident Response Assistant</h3>
             <span class="chip chip-inline">Concept</span>
           </div>
-          <p>
-            Explored running Gemma 4 fully offline in a home-lab environment, pairing it with a log
-            streaming layer to summarize outages and draft RCA steps without data leaving the
-            infrastructure.
-          </p>
+          <p>Explored running Gemma 4 offline in a home-lab environment, pairing it with a log streaming layer to summarize outages and draft RCA steps without data leaving the infrastructure.</p>
           <p><strong>Impact:</strong> Built as a proof-of-concept for privacy-first incident response.</p>
           <div class="chip-row">
             <span class="chip">Gemma 4</span>
@@ -103,16 +91,12 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card tilt-card">
           <div class="project-top">
             <h3>Multi-Region MySQL Galera Reliability Architecture</h3>
             <span class="chip chip-inline">Production</span>
           </div>
-          <p>
-            Built and operated an active-active MySQL Galera setup across Azure and two on-premises
-            datacenters, using virtually synchronous replication and failover paths for high availability
-            and disaster recovery.
-          </p>
+          <p>Built and operated an active-active MySQL Galera setup across Azure and two on-premises datacenters, using virtually synchronous replication and failover paths for high availability and disaster recovery.</p>
           <p><strong>Impact:</strong> Sub-second synchronization and zero downtime during node failures.</p>
           <div class="chip-row">
             <span class="chip">MySQL</span>
@@ -122,15 +106,12 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card tilt-card">
           <div class="project-top">
             <h3>Automated Platform Provisioning</h3>
             <span class="chip chip-inline">Automation</span>
           </div>
-          <p>
-            Automated AWS infrastructure provisioning and configuration management with Terraform and
-            Ansible, standardizing repeatable deployments across platform environments.
-          </p>
+          <p>Automated AWS infrastructure provisioning and configuration management with Terraform and Ansible, standardizing repeatable deployments across platform environments.</p>
           <p><strong>Impact:</strong> Reduced provisioning time by 70% while improving deployment consistency.</p>
           <div class="chip-row">
             <span class="chip">Terraform</span>
@@ -140,15 +121,12 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card tilt-card">
           <div class="project-top">
             <h3>Airflow Pipeline Reliability Optimization</h3>
             <span class="chip chip-inline">Data Platform</span>
           </div>
-          <p>
-            Optimized Apache Airflow DAG scheduling and dependency management across high-volume
-            production data pipelines.
-          </p>
+          <p>Optimized Apache Airflow DAG scheduling and dependency management across high-volume production data pipelines.</p>
           <p><strong>Impact:</strong> Improved workflow success rates from 88% to 96% across 500+ daily pipelines.</p>
           <div class="chip-row">
             <span class="chip">Airflow</span>
