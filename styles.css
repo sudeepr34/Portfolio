@@ -32,7 +32,7 @@ body {
     linear-gradient(180deg, rgba(10, 16, 24, 0.76) 0%, rgba(13, 16, 14, 0.94) 38%, #090b0a 100%),
     url("Concept-Banner.png") top center / min(2200px, 150vw) auto no-repeat,
     linear-gradient(180deg, #111310 0%, #151816 45%, #090b0a 100%);
-  font-family: "Manrope", system-ui, sans-serif;
+  font-family: "Inter", "Plus Jakarta Sans", "Geist", system-ui, sans-serif;
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
@@ -196,8 +196,8 @@ img {
 .section-heading h2,
 .hero h1,
 .profile-card h2 {
-  font-family: "Fraunces", serif;
-  letter-spacing: 0;
+  font-family: "Inter", "Plus Jakarta Sans", "Geist", sans-serif;
+  letter-spacing: -0.02em;
 }
 
 .brand strong {
@@ -209,6 +209,14 @@ img {
   display: block;
   color: var(--muted);
   font-size: 0.82rem;
+  margin-top: 0.2rem;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
 }
 
 .site-nav {
@@ -289,8 +297,9 @@ img {
 .hero h1 {
   margin: 0;
   font-size: clamp(3rem, 5rem, 5.6rem);
-  line-height: 0.98;
+  line-height: 1.15;
   max-width: 10ch;
+  letter-spacing: -0.02em;
 }
 
 .lede,
@@ -513,6 +522,7 @@ img {
 .profile-list strong {
   text-align: right;
   font-size: 0.95rem;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
 }
 
 .section-heading {
@@ -523,7 +533,8 @@ img {
 .section-heading h2 {
   margin: 0;
   font-size: clamp(2rem, 2.7rem, 3.1rem);
-  line-height: 1.04;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 .section-panel {
@@ -650,6 +661,7 @@ img {
   background: rgba(126, 224, 196, 0.08);
   border: 1px solid rgba(126, 224, 196, 0.15);
   font-size: 0.82rem;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
 }
 
 .project-links {
@@ -752,10 +764,10 @@ img {
 
 .page-title {
   margin: 0;
-  font-family: "Fraunces", serif;
+  font-family: "Inter", "Plus Jakarta Sans", "Geist", sans-serif;
   font-size: clamp(2.8rem, 4.4rem, 5rem);
-  line-height: 0.98;
-  letter-spacing: 0;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .page-lede {
@@ -763,6 +775,7 @@ img {
   margin: 1.2rem 0 0;
   color: var(--muted);
   font-size: 1.04rem;
+  line-height: 1.7;
 }
 
 .home-grid,
@@ -854,7 +867,7 @@ img {
 
 .metric-card strong {
   display: block;
-  font-family: "Fraunces", serif;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
   font-size: 2.3rem;
   line-height: 1;
 }
@@ -950,6 +963,34 @@ code {
 .security-note p:last-child {
   margin: 0;
   color: var(--muted);
+}
+
+.tech-stack-ribbon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.15rem;
+}
+
+.tech-stack-ribbon span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  font-size: 0.78rem;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.signal-tag {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .reveal {
