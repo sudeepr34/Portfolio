@@ -1,0 +1,8 @@
+# Source-resolution originals. The site serves the optimised copies in /assets,
+# so these stay in the repo but never ship (they add ~8 MB to a deploy).
+Concept-Banner.png
+concept-banner-bg.jpg
+Profile-pic.jpeg
+
+# Local-only preview server that replays the production headers.
+.devserver.py

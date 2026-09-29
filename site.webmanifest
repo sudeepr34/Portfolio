@@ -1,0 +1,17 @@
+{
+  "name": "Sudeep Reddy — SRE & Platform Engineer",
+  "short_name": "Sudeep Reddy",
+  "description": "Portfolio of Sudeep Reddy, Site Reliability Engineer working on resilient platforms, observability, and AI-assisted operations.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0f0e",
+  "theme_color": "#0b0f0e",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

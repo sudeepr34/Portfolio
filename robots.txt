@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sudeepreddy.vercel.app/sitemap.xml

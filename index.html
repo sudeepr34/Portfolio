@@ -1,215 +1,490 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sudeep Reddy — Site Reliability & Platform Engineer</title>
     <meta
       name="description"
-      content="Sudeep Reddy's portfolio website featuring site reliability engineering, DevOps, cloud infrastructure, and AI-powered incident response projects."
+      content="Sudeep Reddy is a Site Reliability Engineer at PhonePe working on multi-region high availability, observability, infrastructure automation, and AI-assisted incident response for platforms serving 700M+ users."
     />
-    <title>Sudeep Reddy | Portfolio</title>
+    <meta name="author" content="Sudeep Reddy" />
+    <meta name="theme-color" content="#0b0f0e" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="canonical" href="https://sudeepreddy.vercel.app/" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sudeep Reddy" />
+    <meta property="og:title" content="Sudeep Reddy — Site Reliability & Platform Engineer" />
+    <meta
+      property="og:description"
+      content="Resilient platforms, calm incidents, and automation that removes toil. SRE at PhonePe."
+    />
+    <meta property="og:url" content="https://sudeepreddy.vercel.app/" />
+    <meta property="og:image" content="https://sudeepreddy.vercel.app/assets/banner.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sudeep Reddy — Site Reliability & Platform Engineer" />
+    <meta
+      name="twitter:description"
+      content="Resilient platforms, calm incidents, and automation that removes toil. SRE at PhonePe."
+    />
+    <meta name="twitter:image" content="https://sudeepreddy.vercel.app/assets/banner.jpg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Sora:wght@500..800&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" as="image" href="assets/portrait.jpg" />
+
+    <script src="theme.js"></script>
     <script defer src="main.js"></script>
     <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sudeep Reddy",
+        "alternateName": "D Sudeep Reddy",
+        "jobTitle": "Site Reliability Engineer",
+        "url": "https://sudeepreddy.vercel.app/",
+        "email": "mailto:sudeepreddy340@gmail.com",
+        "image": "https://sudeepreddy.vercel.app/assets/portrait.jpg",
+        "worksFor": { "@type": "Organization", "name": "PhonePe" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
+        "sameAs": ["https://github.com/sudeepr34", "https://www.linkedin.com/in/d-sudeep-reddy"],
+        "knowsAbout": [
+          "Site Reliability Engineering",
+          "Kubernetes",
+          "Terraform",
+          "Observability",
+          "Incident Response",
+          "MySQL Galera",
+          "Apache Airflow",
+          "AIOps"
+        ]
+      }
+    </script>
   </head>
+
   <body>
-    <div class="ambient-aurora" aria-hidden="true">
-      <span class="orb orb-a"></span>
-      <span class="orb orb-b"></span>
-      <span class="glow-ring ring-a"></span>
-      <span class="glow-ring ring-b"></span>
+    <div class="preloader" aria-hidden="true">
+      <div class="preloader__inner">
+        <p class="preloader__mark">SR</p>
+        <div class="preloader__track"></div>
+      </div>
     </div>
-    <div class="mesh-sky"></div>
-    <div class="background-grid"></div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <div class="atmosphere" aria-hidden="true">
+      <span class="orb orb--mint"></span>
+      <span class="orb orb--violet"></span>
+      <span class="orb orb--cyan"></span>
+      <div class="atmosphere__grid"></div>
+      <div class="atmosphere__floor"></div>
+      <div class="atmosphere__spotlight"></div>
+      <div class="atmosphere__grain"></div>
+      <div class="atmosphere__vignette"></div>
+    </div>
 
     <header class="site-header">
-      <a class="brand" href="/" aria-label="Sudeep Reddy home">
-        <span class="brand-mark">SR</span>
-        <span class="brand-text">
-          <strong>Sudeep Reddy</strong>
-          <small>SRE | DevOps | Cloud Platform</small>
+      <a class="brand" href="/" aria-label="Sudeep Reddy — home">
+        <span class="brand__mark" aria-hidden="true">SR</span>
+        <span class="brand__text">
+          <span class="brand__name">Sudeep Reddy</span>
+          <span class="brand__role">SRE · DevOps · Cloud Platform</span>
         </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-
-      <nav id="site-nav" class="site-nav">
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
         <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/projects">Projects</a>
         <a href="/experience">Experience</a>
         <a href="/contact">Contact</a>
       </nav>
+
+      <div class="header-tools">
+        <button class="cmd-trigger" type="button" data-palette-open aria-label="Open command palette">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.5" />
+            <path d="m16 16 4 4" />
+          </svg>
+          <span class="cmd-trigger__label">Search</span>
+          <kbd>⌘K</kbd>
+        </button>
+
+        <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle light or dark theme">
+          <svg class="icon-theme__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" />
+          </svg>
+          <svg class="icon-theme__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4m0-14.2-1.4 1.4M6.3 17.7l-1.4 1.4" />
+          </svg>
+        </button>
+
+        <button class="icon-button nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
     </header>
 
-    <main>
-      <section class="hero section-shell">
-        <div class="hero-copy tilt-card" data-reveal>
-          <p class="eyebrow">Production Reliability &amp; Platform Engineering</p>
-          <h1>Building resilient platforms that stay calm under peak load.</h1>
-          <p class="lede">
-            I’m Sudeep Reddy, an SRE &amp; DevOps Engineer at PhonePe. I specialize in scaling distributed platforms,
-            eliminating toil, and leveraging AIOps to slash MTTR across high-concurrency systems supporting 700M+ users.
+    <main id="main">
+      <section class="shell hero">
+        <div class="hero__main surface surface--glass surface--xl surface--glow" data-tilt="2">
+          <p class="badge-live">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            SRE at PhonePe · Bengaluru
           </p>
 
-          <div class="hero-actions">
-            <a class="button button-primary" href="Sudeep Reddy SRE Resume.pdf" download>Download Resume (PDF)</a>
-            <a class="button button-secondary" href="/projects">View Projects</a>
-            <a class="button button-secondary" href="/contact">Contact</a>
+          <h1 class="hero__title" data-split>
+            Building resilient platforms that
+            <span class="grad-text" data-split-atom>stay calm</span>
+            under peak load.
+          </h1>
+
+          <p class="lede">
+            I'm Sudeep Reddy, a Site Reliability &amp; DevOps engineer. I scale distributed platforms,
+            engineer away toil, and use observability plus AIOps to cut MTTR on high-concurrency systems
+            serving <strong>700M+ users</strong>.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="Sudeep Reddy SRE Resume.pdf" download data-magnetic="6">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 20h16" />
+              </svg>
+              Download résumé
+            </a>
+            <a class="button" href="/projects" data-magnetic="5">View projects</a>
+            <a class="button button--ghost" href="/contact" data-magnetic="5">Get in touch</a>
           </div>
 
-          <div class="resume-pulse">
-            <div>
-              <strong>3+ Years</strong>
-              <span>Production SRE</span>
+          <dl class="stat-strip" data-reveal="fade">
+            <div class="stat">
+              <dt class="stat__label">Years in production</dt>
+              <dd class="stat__value" data-count="3" data-count-suffix="+">3+</dd>
             </div>
-            <div>
-              <strong>700M+</strong>
-              <span>User Traffic</span>
+            <div class="stat">
+              <dt class="stat__label">User traffic served</dt>
+              <dd class="stat__value" data-count="700" data-count-suffix="M+">700M+</dd>
             </div>
-            <div>
-              <strong>AIOps</strong>
-              <span>Automation &amp; Telemetry</span>
+            <div class="stat">
+              <dt class="stat__label">p99 latency reduced</dt>
+              <dd class="stat__value" data-count="35" data-count-suffix="%">35%</dd>
             </div>
-          </div>
-
-          <div class="tech-stack-ribbon" aria-label="Tech stack">
-            <span>Kubernetes</span>
-            <span>Terraform</span>
-            <span>Ansible</span>
-            <span>Docker</span>
-            <span>Python</span>
-            <span>Linux</span>
-            <span>Prometheus</span>
-            <span>Grafana</span>
-            <span>ELK Stack</span>
-            <span>MySQL</span>
-            <span>NGINX</span>
-          </div>
+          </dl>
         </div>
 
-        <aside class="hero-card tilt-card" data-reveal>
-          <div class="portrait-stage">
-            <img src="Profile-pic.jpeg" alt="Portrait of Sudeep Reddy" />
-            <span class="signal-tag tag-a">SLO</span>
-            <span class="signal-tag tag-b">AIOps</span>
-            <span class="signal-tag tag-c">HA/DR</span>
-          </div>
-
-          <div class="profile-card">
-            <p class="profile-label">Current role</p>
-            <h2>Site Reliability Engineer</h2>
-            <p>PhonePe · Bengaluru, India</p>
-            <p>Dec 2025 – Present</p>
-          </div>
-
-          <div class="profile-list">
-            <div>
-              <span>Phone</span>
-              <strong>+91 91378 04971</strong>
+        <aside class="hero__aside" aria-label="Profile and live console">
+          <div class="portrait surface surface--glow" data-tilt="4">
+            <img src="assets/portrait.jpg" alt="Portrait of Sudeep Reddy" width="900" height="898" fetchpriority="high" />
+            <span class="signal signal--a">SLO</span>
+            <span class="signal signal--b">AIOps</span>
+            <span class="signal signal--c">HA / DR</span>
+            <div class="portrait__caption">
+              <span>
+                <strong>Site Reliability Engineer</strong>
+                <span>PhonePe · Dec 2025 – Present</span>
+              </span>
             </div>
-            <div>
+          </div>
+
+          <div class="console surface surface--glass" data-spark data-reveal="scale">
+            <div class="console__bar">
+              <p class="console__title">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                Reliability console
+              </p>
+              <span class="chip">demo</span>
+            </div>
+
+            <div class="console__grid">
+              <div class="gauge" data-gauge="99.98">
+                <svg class="gauge__ring" viewBox="0 0 40 40" aria-hidden="true">
+                  <circle class="gauge__track" cx="20" cy="20" r="16" />
+                  <circle class="gauge__value" cx="20" cy="20" r="16" />
+                </svg>
+                <span class="gauge__text">
+                  <span class="gauge__num" data-gauge-value="99.98" data-gauge-decimals="2" data-gauge-suffix="%">99.98%</span>
+                  <span class="gauge__label">Availability</span>
+                </span>
+              </div>
+
+              <div class="gauge" data-gauge="62">
+                <svg class="gauge__ring" viewBox="0 0 40 40" aria-hidden="true">
+                  <circle class="gauge__track" cx="20" cy="20" r="16" />
+                  <circle class="gauge__value" cx="20" cy="20" r="16" />
+                </svg>
+                <span class="gauge__text">
+                  <span class="gauge__num" data-gauge-value="62" data-gauge-suffix="%">62%</span>
+                  <span class="gauge__label">Error budget</span>
+                </span>
+              </div>
+
+              <div class="spark">
+                <div class="spark__head">
+                  <span>p99 latency</span>
+                  <strong data-spark-value>42 ms</strong>
+                </div>
+                <canvas width="320" height="46" role="img" aria-label="Simulated p99 latency trend, steady around 40 milliseconds"></canvas>
+              </div>
+
+              <div class="meter" data-meter="84">
+                <div class="meter__head">
+                  <span>Runbook automation</span>
+                  <strong>84%</strong>
+                </div>
+                <div class="meter__track"><div class="meter__fill"></div></div>
+              </div>
+            </div>
+
+            <p class="console__note">
+              Illustrative panel — values are generated in your browser to show the shape of the
+              dashboards I build, not live production telemetry.
+            </p>
+          </div>
+
+          <div class="detail-list">
+            <button class="detail-row" type="button" data-copy="sudeepreddy340@gmail.com" data-copy-label="Email address">
               <span>Email</span>
-              <strong>sudeepreddy340@gmail.com</strong>
-            </div>
-            <div>
+              <span class="detail-row__value">
+                sudeepreddy340@gmail.com
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 9h10v12H9zM5 15V3h10" />
+                </svg>
+              </span>
+            </button>
+            <button class="detail-row" type="button" data-copy="+91 91378 04971" data-copy-label="Phone number">
+              <span>Phone</span>
+              <span class="detail-row__value">
+                +91 91378 04971
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 9h10v12H9zM5 15V3h10" />
+                </svg>
+              </span>
+            </button>
+            <a class="detail-row" href="https://github.com/sudeepr34" target="_blank" rel="noreferrer">
               <span>GitHub</span>
-              <strong>github.com/sudeepr34</strong>
-            </div>
-            <div>
+              <span class="detail-row__value">
+                sudeepr34
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6" />
+                </svg>
+              </span>
+            </a>
+            <a class="detail-row" href="https://www.linkedin.com/in/d-sudeep-reddy" target="_blank" rel="noreferrer">
               <span>LinkedIn</span>
-              <strong>www.linkedin.com/in/d-sudeep-reddy</strong>
-            </div>
+              <span class="detail-row__value">
+                d-sudeep-reddy
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6" />
+                </svg>
+              </span>
+            </a>
           </div>
         </aside>
       </section>
 
-      <section class="section-shell" data-reveal>
-        <div class="section-heading">
-          <p class="eyebrow">Resume snapshot</p>
-          <h2>Operations depth, platform breadth, and a bias for clean automation.</h2>
+      <div class="shell section--tight">
+        <div class="marquee" aria-label="Tools and technologies I work with">
+          <div class="marquee__track">
+            <span class="marquee__item">Kubernetes</span>
+            <span class="marquee__item">Terraform</span>
+            <span class="marquee__item">Ansible</span>
+            <span class="marquee__item">Docker</span>
+            <span class="marquee__item">Podman</span>
+            <span class="marquee__item">Prometheus</span>
+            <span class="marquee__item">Grafana</span>
+            <span class="marquee__item">ELK Stack</span>
+            <span class="marquee__item">Python</span>
+            <span class="marquee__item">Bash</span>
+            <span class="marquee__item">Linux</span>
+            <span class="marquee__item">MySQL Galera</span>
+            <span class="marquee__item">NGINX</span>
+            <span class="marquee__item">AWS</span>
+            <span class="marquee__item">Azure</span>
+            <span class="marquee__item">Airflow</span>
+            <span class="marquee__item">Hadoop</span>
+            <span class="marquee__item">GitLab CI</span>
+            <span class="marquee__item">PagerDuty</span>
+          </div>
         </div>
-        <div class="resume-grid">
-          <article class="resume-card tilt-card">
+      </div>
+
+      <section class="shell section" id="focus" data-section="Focus">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">What I do</p>
+          <h2 data-split="onscroll">Operations depth, platform breadth, and a bias for clean automation.</h2>
+        </div>
+
+        <div class="grid grid--3" data-stagger>
+          <article class="card surface surface--glow card--numbered" data-tilt="4">
+            <span class="card__index">01</span>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 7h16M4 12h16M4 17h16" />
+                <circle cx="8" cy="7" r="1.6" fill="currentColor" stroke="none" />
+                <circle cx="15" cy="12" r="1.6" fill="currentColor" stroke="none" />
+                <circle cx="10" cy="17" r="1.6" fill="currentColor" stroke="none" />
+              </svg>
+            </span>
             <h3>Platform reliability</h3>
-            <p>Designed and supported multi-region active-active databases, resilient networking, and production incident workflows across critical services.</p>
+            <p>
+              Multi-region active-active databases, resilient networking, and production incident
+              workflows across services where downtime is measured in revenue.
+            </p>
           </article>
-          <article class="resume-card tilt-card">
-            <h3>Cloud and automation</h3>
-            <p>Built repeatable infrastructure with Terraform, Ansible, Docker, Podman, Kubernetes, and CI/CD pipelines for faster delivery and safer changes.</p>
+
+          <article class="card surface surface--glow card--numbered" data-tilt="4">
+            <span class="card__index">02</span>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m8 9-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12" />
+              </svg>
+            </span>
+            <h3>Cloud &amp; automation</h3>
+            <p>
+              Repeatable infrastructure with Terraform, Ansible, Docker, Podman, Kubernetes, and
+              CI/CD pipelines — faster delivery with safer changes.
+            </p>
           </article>
-          <article class="resume-card tilt-card">
+
+          <article class="card surface surface--glow card--numbered" data-tilt="4">
+            <span class="card__index">03</span>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a4 4 0 0 0-4 4v1a3 3 0 0 0 0 6v1a4 4 0 0 0 8 0v-1a3 3 0 0 0 0-6V7a4 4 0 0 0-4-4ZM12 3v18" />
+              </svg>
+            </span>
             <h3>AI-assisted operations</h3>
-            <p>Applied LLMs, observability data, and anomaly-detection workflows to reduce time to insight and support faster RCA during outages.</p>
+            <p>
+              LLM summarisation over observability data and anomaly-detection workflows that shorten
+              time to insight during live outages.
+            </p>
           </article>
         </div>
       </section>
 
-      <section class="section-shell section-panel" data-reveal>
-        <div class="section-heading">
-          <p class="eyebrow">Highlights</p>
-          <h2>Focused pages for the parts people care about most.</h2>
+      <section class="shell section" id="impact" data-section="Impact">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Impact</p>
+          <h2 data-split="onscroll">Numbers from production, not from a slide deck.</h2>
         </div>
 
-        <div class="home-grid">
-          <a class="home-card tilt-card" href="about.html">
+        <div class="grid grid--4" data-stagger>
+          <article class="metric surface surface--glow" data-tilt="5">
+            <span class="metric__value" data-count="450" data-count-suffix=" PB+">450 PB+</span>
+            <span class="metric__label">Hadoop ecosystem supported at Altimetrik on the Visa engagement.</span>
+          </article>
+          <article class="metric surface surface--glow" data-tilt="5">
+            <span class="metric__value" data-count="70" data-count-suffix="%">70%</span>
+            <span class="metric__label">Faster infrastructure provisioning via Terraform and Ansible.</span>
+          </article>
+          <article class="metric surface surface--glow" data-tilt="5">
+            <span class="metric__value" data-count="35" data-count-suffix="%">35%</span>
+            <span class="metric__label">Lower p99 latency through SQL tuning and NGINX optimisation.</span>
+          </article>
+          <article class="metric surface surface--glow" data-tilt="5">
+            <span class="metric__value" data-count="96" data-count-suffix="%">96%</span>
+            <span class="metric__label">DAG success rate after tuning 500+ daily Airflow pipelines.</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="shell section" id="explore" data-section="Explore">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Explore</p>
+          <h2 data-split="onscroll">Focused pages for the parts people care about most.</h2>
+        </div>
+
+        <div class="grid grid--3" data-stagger>
+          <a class="link-card surface surface--glow" href="/about" data-tilt="4">
             <h3>About</h3>
             <p>Background, reliability mindset, and the engineering principles behind the work.</p>
+            <span class="link-card__arrow">
+              Read more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h15m0 0-5-5m5 5-5 5" />
+              </svg>
+            </span>
           </a>
-          <a class="home-card tilt-card" href="projects.html">
+          <a class="link-card surface surface--glow" href="/projects" data-tilt="4">
             <h3>Projects</h3>
-            <p>AI incident response, anomaly detection, data platform reliability, and observability.</p>
+            <p>AI incident response, anomaly detection, data-platform reliability, and observability.</p>
+            <span class="link-card__arrow">
+              See the work
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h15m0 0-5-5m5 5-5 5" />
+              </svg>
+            </span>
           </a>
-          <a class="home-card tilt-card" href="experience.html">
+          <a class="link-card surface surface--glow" href="/experience" data-tilt="4">
             <h3>Experience</h3>
-            <p>PhonePe work, skills, education, and certifications in one place.</p>
+            <p>PhonePe and Visa work, skills, education, and certifications in one place.</p>
+            <span class="link-card__arrow">
+              View timeline
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h15m0 0-5-5m5 5-5 5" />
+              </svg>
+            </span>
           </a>
         </div>
       </section>
 
-      <section class="section-shell mini-contact" data-reveal>
-        <div>
-          <p class="eyebrow">Resume</p>
-          <h2 class="page-title">Looking for the complete technical snapshot?</h2>
-        </div>
-        <a class="button button-primary" href="Sudeep Reddy SRE Resume.pdf" download>Download Resume (PDF)</a>
-      </section>
-
-      <section class="section-shell section-panel" data-reveal>
-        <div class="section-heading">
-          <p class="eyebrow">Depth</p>
-          <h2>Built around production reliability, data platforms, and AI-assisted operations.</h2>
-        </div>
-        <div class="metric-grid">
-          <article class="metric-card tilt-card">
-            <strong>450 PB+</strong>
-            <span>Hadoop ecosystem supported at Altimetrik (Visa engagement).</span>
-          </article>
-          <article class="metric-card tilt-card">
-            <strong>70%</strong>
-            <span>Faster infrastructure provisioning via Terraform &amp; Ansible.</span>
-          </article>
-          <article class="metric-card tilt-card">
-            <strong>35%</strong>
-            <span>Reduction in p99 latency through SQL tuning &amp; NGINX optimization.</span>
-          </article>
-          <article class="metric-card tilt-card">
-            <strong>96%</strong>
-            <span>DAG workflow success rate achieved after Airflow pipeline tuning.</span>
-          </article>
+      <section class="shell section" id="resume" data-section="Résumé">
+        <div class="cta surface surface--glass surface--xl" data-reveal="scale">
+          <div class="cta__copy">
+            <p class="eyebrow">Résumé</p>
+            <h2>Looking for the complete technical snapshot?</h2>
+            <p class="body-dim">
+              One page, every system, every number — or hit
+              <span class="kbd-combo"><kbd>⌘</kbd><kbd>K</kbd></span> to jump anywhere on this site.
+            </p>
+          </div>
+          <div class="cluster">
+            <a class="button button--primary" href="Sudeep Reddy SRE Resume.pdf" download data-magnetic="6">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 20h16" />
+              </svg>
+              Download PDF
+            </a>
+            <a class="button" href="/contact" data-magnetic="5">Start a conversation</a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 Sudeep Reddy.</p>
-      <p>Built for scale, high availability, and reliability.</p>
+      <p>© 2026 Sudeep Reddy · Built for scale, high availability, and reliability.</p>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/experience">Experience</a>
+        <a href="/contact">Contact</a>
+        <a href="https://github.com/sudeepr34" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+      <p class="site-footer__meta">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        All systems nominal
+      </p>
     </footer>
+
+    <button class="to-top" type="button" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 20V5m0 0-6 6m6-6 6 6" />
+      </svg>
+    </button>
   </body>
 </html>
