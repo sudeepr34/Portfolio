@@ -1,0 +1,23 @@
+{
+  "name": "primary",
+  "version": "1.0.0",
+  "description": "Multi-page portfolio for Sudeep Reddy (SRE / DevOps / Cloud Platform), built as a dependency-free static site: hand-written HTML, one stylesheet, and one script. No build step, no framework, no bundler.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudeepr34/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudeepr34/Portfolio/issues"
+  },
+  "homepage": "https://github.com/sudeepr34/Portfolio#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
